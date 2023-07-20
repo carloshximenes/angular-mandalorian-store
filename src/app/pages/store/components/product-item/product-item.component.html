@@ -1,0 +1,16 @@
+<div class="product-item">
+  <img class="product-item__image" [src]="product.image" />
+  <div class="product-item__info">
+    <div class="product-item__info__name">{{ product.name | uppercase }}</div>
+    <div class="product-item__info__price">R$ {{ product.price }},00</div>
+  </div>
+  <div class="product-item__actions">
+    <button
+      class="product-item__actions__add-to-cart"
+      [disabled]="!product.isAvailable"
+      (click)="addToCart()"
+    >
+      {{ product.isAvailable ? "ADICIONAR AO CARRINHO" : "FORA DE ESTOQUE" }}
+    </button>
+  </div>
+</div>

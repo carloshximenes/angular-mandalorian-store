@@ -1,0 +1,12 @@
+<div *ngIf="cartList" class="product-list">
+  <app-filter (onSearch)="getProductsBy($event)"></app-filter>
+  <div class="product-list__container">
+    <div class="product-list__item" *ngFor="let product of products">
+      <app-product-item
+        [product]="product"
+        (cartAction)="addToCart(product)"
+      ></app-product-item>
+    </div>
+  </div>
+  <app-float-cart [size]="getSizeCart()"></app-float-cart>
+</div>

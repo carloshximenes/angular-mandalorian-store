@@ -1,0 +1,11 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid black;
+  &__image {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+  }
+}

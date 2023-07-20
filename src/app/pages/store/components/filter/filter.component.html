@@ -1,0 +1,10 @@
+<div class="filter">
+  <form [formGroup]="form" (ngSubmit)="getBy($event)">
+    <input
+      type="text"
+      placeholder="Informe o nome do produto"
+      formControlName="search"
+    />
+    <button type="submit">BUSCAR</button>
+  </form>
+</div>
