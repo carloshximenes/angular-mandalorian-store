@@ -7,7 +7,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { FilterComponent } from './components/filter/filter.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FloatCartComponent } from './components/float-cart/float-cart.component';
-
+import { FloatOrderNowComponent } from './components/float-order-now/float-order-now.component';
 @NgModule({
   declarations: [
     StoreComponent,
@@ -15,6 +15,7 @@ import { FloatCartComponent } from './components/float-cart/float-cart.component
     ProductItemComponent,
     FilterComponent,
     FloatCartComponent,
+    FloatOrderNowComponent,
   ],
   exports: [StoreComponent],
   imports: [CommonModule, HttpClientModule, ReactiveFormsModule],

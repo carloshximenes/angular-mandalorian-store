@@ -9,4 +9,8 @@
     </div>
   </div>
   <app-float-cart [size]="getSizeCart()"></app-float-cart>
+  <app-float-order-now
+    [showComponent]="getSizeCart() > 0"
+    (orderNow)="orderNow()"
+  ></app-float-order-now>
 </div>
